@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+  width: 100%;
+  background-color: white;
+
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+}
+
+p {
+  line-height: 27px;
+}
+
+header {
+  padding: 75px 150px;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100% 363px;
+
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  margin: 18px 0px;
+  color: hsl(210, 10%, 33%);
+}
+
+#header-logo {
+  width: 125px;
+  height: 125px;
+}
+
+.text-desc {
+  max-width: 700px;
+  text-align: center;
+}
+
+.btn-gp {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ios-btn {
+  min-width: 230px;
+  min-height: 55px;
+  background-color: hsl(171, 66%, 44%);
+  border: 0px;
+  border-radius: 30px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.mac-btn {
+  min-width: 230px;
+  min-height: 55px;
+  background-color: hsl(233, 100%, 69%);
+  border: 0px;
+  border-radius: 30px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.sect {
+  padding: 75px 10.42%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#full-sect {
+  padding: 75px 0px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 18px 0px;
+  color: hsl(210, 10%, 33%);
+}
+
+#sect-1-content {
+  width: 100%;
+  display: flex;
+  gap: 5.21%;
+  justify-content: start;
+  align-items: center;
+}
+
+#sect-1-img {
+  object-position: -30px;
+}
+
+#sect-1-text {
+  max-width: 380px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 18px 0px;
+  color: hsl(210, 10%, 33%);
+}
+
+#features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#blacklist-icon {
+  width: 35.2px;
+  height: 32px;
+}
+
+.feature {
+  max-width: 33%;
+  text-align: center;
+}
+
+#row-sect {
+  padding: 75px 150px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  margin-top: 75px;
+  padding: 40px 150px 0px 150px;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(5, auto);
+}
+
+#icons {
+  justify-self: flex-end;
+  align-self: center;
+
+  display: flex;
+  gap: 20px;
+}
+
+#footer-logo {
+  width: 60px;
+  height: 60px;
+  align-self: center;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(201, 11%, 66%);
+}
