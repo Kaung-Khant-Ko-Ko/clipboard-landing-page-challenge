@@ -14,7 +14,7 @@ p {
 }
 
 header {
-  padding: 75px 150px;
+  padding: 75px 10.42%;
   background-image: url("./images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: 100% 363px;
@@ -54,24 +54,46 @@ h1 {
   min-width: 230px;
   min-height: 55px;
   background-color: hsl(171, 66%, 44%);
-  border: 0px;
+  border: 1px solid hsla(180, 100%, 27%, 0.5);
   border-radius: 30px;
+  box-shadow: 0 4px 8px 0 hsla(171, 66%, 44%, 0.5);
 
   font-size: 1rem;
   font-weight: 600;
   color: white;
 }
 
+.ios-btn:hover {
+  background-color: hsla(171, 66%, 44%, 0.9);
+  border-color: hsla(180, 100%, 27%, 0.4);
+  cursor: pointer;
+}
+
+.ios-clicked {
+  background-color: hsl(171, 66%, 40%) !important;
+}
+
 .mac-btn {
   min-width: 230px;
   min-height: 55px;
   background-color: hsl(233, 100%, 69%);
-  border: 0px;
+  border: 1px solid hsla(233, 100%, 69%, 0.5);
   border-radius: 30px;
+  box-shadow: 0 4px 8px 0 hsla(233, 100%, 69%, 0.5);
 
   font-size: 1rem;
   font-weight: 600;
   color: white;
+}
+
+.mac-btn:hover {
+  background-color: hsla(233, 100%, 69%, 0.9);
+  border-color: hsla(233, 100%, 69%, 0.4);
+  cursor: pointer;
+}
+
+.mac-clicked {
+  background-color: hsl(233, 100%, 65%) !important;
 }
 
 .sect {
@@ -140,33 +162,85 @@ h3 {
 }
 
 #row-sect {
-  padding: 75px 150px;
+  padding: 75px 10.42%;
   display: flex;
-  gap: 30px;
+  gap: 2.08%;
   justify-content: space-between;
   align-items: center;
 }
 
+#google-logo {
+  content: url("./images/logo-google.png");
+}
+
+#google-logo:hover {
+  content: url("./images/logo-google-color.png");
+  width: 165px;
+  height: 55px;
+  object-fit: cover;
+}
+
+#ibm-logo {
+  content: url("./images/logo-ibm.png");
+}
+
+#ibm-logo:hover {
+  content: url("./images/logo-ibm-color.png");
+  width: 139px;
+  height: 51px;
+  object-fit: cover;
+}
+
+#microsoft-logo {
+  content: url("./images/logo-microsoft.png");
+}
+
+#microsoft-logo:hover {
+  content: url("./images/logo-microsoft-color.png");
+  width: 161px;
+  height: 35px;
+  object-fit: cover;
+}
+
+#hp-logo {
+  content: url("./images/logo-hp.png");
+  width: 145px;
+}
+
+#hp-logo:hover {
+  content: url("./images/logo-hp-color.png");
+  width: 145px;
+  height: 56px;
+  object-fit: cover;
+}
+
 footer {
+  height: auto;
+  background-color: hsl(220, 18%, 97%);
   margin-top: 75px;
-  padding: 40px 150px 0px 150px;
+  padding: 40px 10.42% 0px 10.42%;
   display: grid;
-  gap: 80px;
+  gap: 5.56%;
   grid-template-columns: repeat(5, auto);
 }
 
 #icons {
-  justify-self: flex-end;
+  width: 100%;
+  justify-content: flex-end;
   align-self: center;
 
   display: flex;
-  gap: 20px;
+  gap: 13.9%;
 }
 
 #footer-logo {
   width: 60px;
   height: 60px;
   align-self: center;
+}
+
+#footer-logo:hover {
+  cursor: pointer;
 }
 
 ul {
@@ -181,4 +255,89 @@ li {
 a {
   text-decoration: none;
   color: hsl(201, 11%, 66%);
+}
+
+a:hover {
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+}
+
+.icon:hover {
+  filter: invert(61%) sepia(78%) saturate(401%) hue-rotate(121deg)
+    brightness(85%) contrast(90%);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  #full-sect {
+    padding: 75px 10.42%;
+  }
+  #sect-1-content {
+    flex-direction: column;
+    gap: 75px;
+  }
+  #sect-1-img {
+    width: 100%;
+    object-position: 0px;
+  }
+  #sect-1-text {
+    max-width: 100%;
+    padding: 0px 10.42%;
+    flex-direction: row;
+    text-align: center;
+  }
+  #devices-img {
+    width: 100%;
+  }
+  #row-sect {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    background-image: url("./images/bg-header-mobile.png");
+  }
+
+  .ios-btn,
+  .mac-btn {
+    min-width: 100%;
+  }
+
+  #sect-1-img,
+  #devices-img {
+    width: 100%;
+  }
+
+  #sect-1-text {
+    flex-direction: column;
+  }
+
+  #features {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  footer {
+    padding-bottom: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  ul {
+    margin: 0px;
+    text-align: center;
+  }
+
+  #icons {
+    justify-content: center;
+  }
 }
